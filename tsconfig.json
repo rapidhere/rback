@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "charset": "utf8",
+        "experimentalDecorators": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "typeRoots": [
+            "./nodemodules/@types"
+        ]
+    }
+}
