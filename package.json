@@ -2,15 +2,16 @@
   "name": "rback",
   "version": "0.0.1",
   "description": "rback-client",
-  "main": "index.js",
+  "main": "dist/main.js",
   "author": "rapidhere@gmail.com",
   "license": "LGPL-3.0",
-  "main": "dist/main.js",
   "devDependencies": {
     "@types/electron": "^1.4.25",
     "del": "^2.2.2",
     "electron": "^1.4.4",
     "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-run": "^1.7.1",
     "gulp-typescript": "^3.1.1",
     "typescript": "^2.0.6"
   }

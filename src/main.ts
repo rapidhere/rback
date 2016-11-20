@@ -3,34 +3,9 @@
  * Author: rapidhere@gmail.com
  */
 'use strict';
-import electron = require('electron');
 
-const app = electron.app;
+import RbackApplication from './core/app';
 
-let mainWindow : Electron.BrowserWindow;
+let app = new RbackApplication();
 
-function createWindow() {
-  mainWindow = new electron.BrowserWindow({
-      width: 800,
-      height: 600});
-
-  mainWindow.loadURL(`file://${__dirname}/index.html`);
-
-  mainWindow.webContents.openDevTools()
-
-  mainWindow.on('closed', () => {
-    mainWindow = null;
-  })
-}
-
-app.on('ready', createWindow);
-
-app.on('window-all-closed', () => {
-  app.quit();
-});
-
-app.on('activate', () => {
-  if(mainWindow == null) {
-    createWindow();
-  }
-});
+app.start();
